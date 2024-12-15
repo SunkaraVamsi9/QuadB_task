@@ -18,7 +18,7 @@ class _MoviedetailsscreenState extends State<Moviedetailsscreen> {
           child: Column(crossAxisAlignment:CrossAxisAlignment.start
               ,children: [
               
-              Container(height:300,decoration:BoxDecoration(
+              Container(height:MediaQuery.of(context).size.width/1.8,decoration:BoxDecoration(
               border: Border.all(color:Colors.white),
               image:DecorationImage(image:NetworkImage(widget.movie["show"]["image"]["medium"]
               ),fit: BoxFit.fill))),

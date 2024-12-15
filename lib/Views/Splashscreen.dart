@@ -17,7 +17,7 @@ class _SplashscreenState extends State<Splashscreen> {
     
   }
   nextscreen() async{
-await Future.delayed(Duration(seconds:6));
+await Future.delayed(Duration(seconds:4));
     Navigator.pushReplacement(context,MaterialPageRoute(builder:(build)=>
     Homescreen()));
   }

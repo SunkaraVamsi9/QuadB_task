@@ -23,7 +23,8 @@ class _MoviecardState extends State<Moviecard> {
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
           //mainAxisSize: MainAxisSize.min,
             children: [
-              widget.moviedetails["show"]["image"]!=null?Container(height:300,decoration:BoxDecoration(
+              widget.moviedetails["show"]["image"]!=null?Container(height:MediaQuery.of(context).size.width/1.8
+              ,decoration:BoxDecoration(
                 border: Border.all(color:Colors.white),
               image:DecorationImage(image:NetworkImage(widget.moviedetails["show"]["image"]["medium"]
               ),fit: BoxFit.fill))):
